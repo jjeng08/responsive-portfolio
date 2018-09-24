@@ -1,224 +1,80 @@
-/*General*/
-body{
-	background-image: url("../images/rockywall.png");
-}
-
-p{
-	margin-bottom:20px; 
-}
-
-* {
-	box-sizing: border-box;
-  }
-
-/*Header*/
-header{
-	clear:both;
-	position:static;
-	background-color: #ffffff;
-	height:60px;
-	border-bottom-style:solid;
-	border-color:#cccccc;
-	border-width:10px;
+.bluebox{
+	border-color:blue;
+	border-style:solid;
+	border-width:2px;
+	box-sizing:border-box;
+	padding:10px;
 	margin:0;
-	padding:0;
+	min-height:100%;
+	margin-bottom:-20px;
+}
+
+.redbox{
+	border-color: red;
+	border-style: solid;
+	border-width:2px;
+	box-sizing:border-box;
+	padding:10px 10px 10px 20px;
+	width:940px;
+	text-align: center;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+h2{
+	border-color:grey;
+	border-bottom-style:solid;
+	font-size:30px;
+	margin:20px
+}
+
+.pictureGallery{
+	border-color:black;
+	border-style: solid;
+	border-width:2px;
+	box-sizing:border-box;
 	width:100%;
-	top:0px;
+	max-width:700px;
+	display: block;
 }
-	
 
-	h1{
-		font-family:Georgia, 'Times New Roman', Times, serif;
-		float:left;
-		background-color: #4aaaa5;
-		border-color: #cccccc;
-		margin-left:50px;
-		margin-top:0px;
-		font-size:25px;
-		color:#ffffff;
-		height:45px;
-		padding:15px 20px 0px 20px;
-	}
-
-	.headerlink{
-		background-color:#ffffff;
-		font-family: Arial, Helvetica, sans-serif;
-		color: #666666;
-		font-size:18px;
-		font-weight:500;
-		float:right;
-		padding-left: 10px;
-		padding-right: 10px;
-		margin-top:20px;
-		text-decoration:none;
-	}
-
-	.headerlink:hover{
-		text-decoration:underline;
-	}
-
-	#contact, #portfolio, #about,{
-		padding: 20px 10px 0px 10px;
-	}
-	#about, #portfolio{
-		border-right-style:solid;
-		border-color:#666666;
-		border-width:1px;
-	}
-	#contact{
-		margin-right:10px;
-	}
-
-/*Main Sections*/
-
-.wrapper{
-	margin-left:40px;
-}
-	main{
-		border-style:solid;
-		border-width:2px;
-		background-color:#ffffff;
-		border-color:#dddddd; 
-		border-radius:10px;
-		width:900px;
-		margin-top:50px;
-		margin-left:60px;
-		margin-bottom:100px;
-		}
-
-		h2{	clear:both;
-			font-family: Arial, Helvetica, sans-serif;
-			font-size:25px;
-			background-color:#ffffff;
-			border-color:#4aaaa5;
-			border-bottom:solid;
-			float:left;
-			color: #4aaaa5;
-			margin: 20px 0px 20px 40px;
-			padding:10px 10px 10px 30px;
-			width:800px;
-		}	
-
-/*Footer*/
-footer{
-	background-color:#666666;
-	width: 100%;
-	color:#ffffff;
+.pictureWrap{
+	border-color:purple;
+	border-style:solid;
+	box-sizing:border-box;
+	border-width:2px;
+	display: inline-block;
+	background-color: green;
+	width:auto;
+	max-width: 275px;
+	margin:0px 30px 0px 30px;
 	text-align:center;
-	border-top-style:solid;
-	border-width:3px;
-	border-color: #4aaaa5;
-	position:fixed;
-	bottom:0;
-	padding-top:20px;
-}
-
-/*Profile Page*/
-#profilePic{
-	float:left;
-	height:200px;
-	margin:0px 40px 20px 40px; 	
-}
-
-.bio{
-	font-family: Arial, Helvetica, sans-serif;
-	font-size:14px;
-	font: color #666666;
-	margin:40px;
-	line-height:21px;
-}
-
-/*Portfolio Page*/
-.portfoliobox{
-	float:left;
-	height:200px;
-	width:300px;
+	vertical-align:top;
+	margin-bottom:30px;
 	position:relative;
 }
 
-	.portfolioPic {
-		height:160px;
-		width: 280px;
-		margin-left:20px;
-		margin-bottom:40px;
-	}
-
-
-	.picLabel{
-		float:left;
-		font-family: Arial, Helvetica, sans-serif;
-		color:white;
-		height: 30px;
-		line-height:30px;
-		width:280px;
-		text-align:center;
-		background-color:#4aaaa5;
-		bottom:50px;
-		left:20px;
-		position:absolute;
-		text-decoration:none;
-	}
-
-	.picLabel:hover {
-		box-sizing: border-box;
-		-moz-box-sizing: border-box;
-		-webkit-box-sizing: border-box;
-		height: 47px;
-		width:300px;
-		border: 2px solid white; 
-	}
-
-/*Contact Page*/
-.allforms{
-	margin:60px;
+.picture{
+	width:100%;
+	display:block;
+	background-color: white;
 }
 
-	.infopiece, .userinfo, #subject{
-		float:left;
-		clear:both;
-		width:840px;
-	}
+.pictureLabel{
+	position:absolute;
+	bottom:20px;
+	width:100%;
+	background-color: red;
+	color:white;
+	font-size:24px;
+	line-height:30px;
+}
 
-	.infopiece{
-		font-family: Arial, Helvetica, sans-serif;
-		font-size:14px;
-		color: #666666;
-		margin:10px 0px 7px 0px;
-		font-weight:600;
-	}
-
-	.userinfo{
-		height:18px;
-		text-align:middle;
-		padding:none;
-	}
-
-	.userinfo, #subject{
-		font-family:Arial, Helvetica, sans-serif;
-		font-size:14px;
-		line-height:21px;
-		color:#666666;
-		margin-bottom:15px;
-		border-radius:3px;
-		border-style:solid;
-		border-color:#666666;
-		border-width:thin;
-	}
-
-	#finalbutton{
-		float:left;
-		clear:both;	
-		margin-bottom:40px;
-		margin-top:20px;
-		background-color:#4aaaa5;
-		color:white;
-		height:40px;
-		width:90px;
-		font-family: Arial, Helvetica, sans-serif;
-		text-align:center;
-		text-align:middle;
-		border-style:none;
-	}
+footer{
+	background-color:grey;
+	text-align:center;
+	height:20px;
+}
 
 /*Clearfix Base*/
 .clearfix::after {
@@ -228,40 +84,43 @@ footer{
 	overflow:auto;
   }  
 
-  /*Media Queries*/
+/*Media Queries*/
+
 @media screen and (max-width: 980px) {
-	wrapper{
-		width: 100%;
+	.redbox{
+		width:100%
 	}
-	main{
-		width:90%;
-		margin-left:5%;
-		margin-right:20px;
+
+	.pictureWrap{
+		max-width:225px;
+		margin:0px 30px 30px 0px;
 	}
+}
+
+@media screen and (max-width: 640px) {
 	h2{
-		width:85%;
+		font-size:22px;
 	}
 
-}
-@media screen and (max-width: 768px) {
-	main{
-		width:90%;
-		margin-left:5%;
-		margin-right:20px;
-	}	
-	.wrapper{
-		margin-left:0;
+	.pictureGallery{
+		padding:0px 10px 0px 10px
 	}
-	.portfolioBox{
-		width:600px;
+	
+	.pictureWrap{
+		display: block;
+		margin-left:auto;
+		margin-right:auto;
+		width:100%;
+		max-width:275px;
 	}
-}
-@media screen and (max-width: 720px) {
 
-	wrapper{
-		text-align:center;
+	.pictureLabel{
+		bottom:10%;
+		width:100%;
+		background-color: red;
+		color:white;
+		font-size:14px;
+		line-height:18px;
 	}
-	.portfolioBox{
-		display:inline-block;
-	}
+
 }
