@@ -23,7 +23,7 @@ header{
 		float:left;
 		background-color: #4aaaa5;
 		border-color: #cccccc;
-		margin-left:50px;
+		margin-left:150px;
 		margin-top:0px;
 		font-size:36px;
 		color:#ffffff;
@@ -77,7 +77,6 @@ header{
 	box-sizing:border-box;
 	background-color:#ffffff;
 	width:940px;
-	margin-bottom:40px;
 	margin:40px auto;
 }
 
@@ -97,6 +96,45 @@ h2{
 	clear:both;
 }
 
+footer{
+	border-color: #4aaaa5;
+	border-top-style:solid;
+	border-width:3px;
+	color:#ffffff;
+	font-family:Georgia, 'Times New Roman', Times, serif;
+	font-size:16px;
+	background-color:#666666;
+	text-align:center;
+	height:36px;
+	line-height:36px;
+}
+
+/*Index Specific*/
+.profileBox{
+	display: block;
+	width:auto;
+	max-width:300px;
+	padding:0;
+	margin:20px 40px 20px 40px;
+	position:relative;
+
+}
+
+#profilePic{
+	width:100%;
+	display:block;
+	float:left;
+	margin-right:40px;
+	margin-bottom:40px;
+}
+
+.bioText{
+	margin:0px 40px 20px 40px;
+	font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/*Portfolio Specific*/
 .pictureGallery{
 	box-sizing:border-box;
 	width:100%;
@@ -126,19 +164,82 @@ h2{
 
 .pictureLabel{
 	position:absolute;
-	bottom:20px;
+	bottom:30px;
+	left:0;
 	width:100%;
-	background-color: red;
+	background-color:#4aaaa5;
 	color:white;
-	font-size:24px;
-	line-height:30px;
+	font-size:20px;
+	line-height:36px;
+	height:36px;
+	text-decoration:none;
 }
 
-footer{
-	background-color:grey;
-	text-align:center;
-	height:20px;
+.pictureLabel:hover {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	height: 38px;
+	width:100%;
+	border: 2px solid white; 
 }
+
+/*Contact Specific*/
+
+.allforms{
+	margin:0 40px 40px 40px;
+	width:100%;
+}
+
+	.infopiece, .userinfo, #subject{
+		float:left;
+		clear:both;
+		
+	}
+
+	.infopiece{
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		color: #666666;
+		margin:10px 0px 7px 0px;
+		font-weight:600;
+	}
+
+	.userinfo{
+		height:18px;
+		text-align:middle;
+		padding:none;
+		margin-right:auto;
+		margin-left:auto;
+	}
+
+	.userinfo, #subject{
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:14px;
+		line-height:21px;
+		color:#666666;
+		width:90%;
+		margin-bottom:15px;
+		border-radius:3px;
+		border-style:solid;
+		border-color:#666666;
+		border-width:thin;
+	}
+
+	#finalbutton{
+		float:left;
+		clear:both;	
+		margin-bottom:40px;
+		margin-top:20px;
+		background-color:#4aaaa5;
+		color:white;
+		height:40px;
+		width:90px;
+		font-family: Arial, Helvetica, sans-serif;
+		text-align:center;
+		text-align:middle;
+		border-style:none;
+	}
 
 /*Clearfix Base*/
 .clearfix::after {
@@ -151,6 +252,10 @@ footer{
 /*Media Queries*/
 
 @media screen and (max-width: 980px) {
+	h1{
+		margin-left:12%;
+	}
+
 	.redbox{
 		width:100%;
 		padding-left:10px;
@@ -169,6 +274,7 @@ footer{
 		max-width:250px;
 		margin:0px 15px 15px 0px;
 	}	
+
 }
 
 @media screen and (max-width: 640px) {
@@ -187,6 +293,7 @@ footer{
 		line-height:36px;
 		background-color:none;
 	}
+
 	.linkSet{
 		display:flex;
 		flex-direction:row-reverse;
@@ -198,6 +305,7 @@ footer{
 		text-align:center;
 		justify-content:center;
 	}
+
 	.headerlink{
 		float:none;
 		padding:0;
@@ -214,16 +322,37 @@ footer{
 		margin-right:10px;
 	}
 
-
 	h2{
 		font-size:22px;
 		font-weight:600;
-		margin:0;
+		margin:0px 0px 10px 0px;
 		padding-top:20px;
+		text-align:center;
 	}
 
+	.redbox{
+		margin-top:15px;
+	}
+
+	/*Index Specific*/
+	.profileBox{
+		margin-left:auto;
+		margin-right:auto;
+		padding:0 35px;
+
+	}
+
+	#profilePic{
+		margin:0px 0px 20px 0px;
+	}
+
+	/*Portfolio Specific*/
 	.pictureGallery{
 		padding:0px;
+	}
+
+	.bioText{
+		display:inline-block;
 	}
 	
 	.pictureWrap{
@@ -238,10 +367,29 @@ footer{
 	.pictureLabel{
 		bottom:20%;
 		width:100%;
-		background-color: red;
-		color:white;
 		font-size:14px;
-		line-height:18px;
+		line-height:24px;
+		height:24px;
 	}
 
+	.pictureLabel:hover {
+		height: 26px;
 }
+
+/*Contact Specific*/
+.allforms{
+	margin-left:15px;
+}
+
+.infopiece{
+	margin-top:5px;
+}
+
+.userinfo, #subject{
+	width:80%;
+}
+
+/*Highlight Box*/
+/* border-style:solid;
+border-width:2px;
+border-color:blue; */
