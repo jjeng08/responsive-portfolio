@@ -3,6 +3,10 @@ body{
 	background-image: url("./../images/rockywall.png");
 }
 
+.wrapper{
+	padding: 0 10px;
+}
+
 /*Header*/
 header{
 	clear:both;
@@ -61,15 +65,8 @@ header{
 	}
 
 /*Main Sections*/
-.bluebox{
-	box-sizing:border-box;
-	padding:10px;
-	margin:0;
-	min-height:100%;
-	margin-bottom:-20px;
-}
 
-.redbox{
+.whitebox{
 	border-color:#dddddd; 
 	border-style: solid;
 	border-width:2px;
@@ -108,6 +105,8 @@ footer{
 	text-align:center;
 	height:36px;
 	line-height:36px;
+	grid-row-start: 2;
+	grid-row-end: 3;
 }
 
 /*Index Specific*/
@@ -242,6 +241,16 @@ footer{
 		border-style:none;
 	}
 
+/*Easter Egg*/
+.easteregg{
+	display:none;
+	width:250px;
+	margin-top:20px;
+	margin-bottom:40px;
+	margin-left:auto;
+	margin-right:auto;
+  }
+
 /*Clearfix Base*/
 .clearfix::after {
 	content: "";
@@ -257,7 +266,7 @@ footer{
 		margin-left:12%;
 	}
 
-	.redbox{
+	.whitebox{
 		width:100%;
 		padding-left:10px;
 		padding-right:10px;
@@ -331,7 +340,7 @@ footer{
 		text-align:center;
 	}
 
-	.redbox{
+	.whitebox{
 		margin-top:15px;
 		align-content:center;
 	}
@@ -394,6 +403,13 @@ footer{
 .userinfo, #subject{
 	width:80%;
 }
+
+@media screen and (max-width:400px){
+	.easteregg{
+		display:block;
+	}
+}
+
 
 /*Highlight Box*/
 /* border-style:solid;
